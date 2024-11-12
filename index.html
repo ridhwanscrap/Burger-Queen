@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+  <title>Burger Queen</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- internal css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- extarnal css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- navbar start -->
+
+  <nav class="navbar-expand-lg navbar-dark fixed-top shadow-lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-4">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.webp">
+          </a>
+        </div>
+        <div class="col-lg-6 col-md-6 col-2">
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#offer">Offer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#delivery">Delivery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-6 social-media">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-cart-plus"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero section starts-->
+  <div class="hero">
+
+    <div id="carouselExampleCaptions" class="carousel slide mt10" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="#menu">
+            <img src="img/banner--1.jpg" class="d-block w-100" alt="...">
+          </a>
+          <div class="carousel-caption d-none d-md-block carousel--txt">
+            <h1>Double Cheeseburger</h1>
+            <p>Two flamed-grilled beef patties topped with Applewood smoked American cheese, all in our toasted...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="#offer">
+            <img src="img/banner--2.jpg" class="d-block w-100" alt="...">
+          </a>
+          <div class="carousel-caption d-none d-md-block carousel--txt">
+            <h1>Family Party</h1>
+            <p>The ultimate family feast...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="#delivery">
+            <img src="img/banner--3.jpeg" class="d-block w-100" alt="...">
+          </a>
+          <div class="carousel-caption d-none d-md-block carousel--txt">
+            <h1>Enjoy our meal with your closest</h1>
+            <p>capture lively moment among all...</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- offer section start -->
+
+  <div class="offer--section text-center p-5" id="offer">
+
+    <h2 class="pb-2">Offer!!!</h2>
+    <p>"Feeling hungry? Perfect! We've got deals that are tastier than your aunt's secret recipes (shh, don't tell her).
+      Grab a seat, loosen your belt, and get ready for some seriously satisfying savings on all yourfavorites. Warning:
+      extreme food happiness may occur!"</p>
+
+
+    <div class="offer--container">
+      <!-- deal 1 -->
+      <div class="container py-4">
+        <div class="deal row align-items-center">
+          <div class="col-md-3">
+            <img src="img/offer1.avif" alt="Doritos Chicken Fries" class="img-fluid rounded">
+          </div>
+          <div class="col-md-9">
+            <div class="price">£3.00</div>
+            <div class="title">£3 x6pc. DORITOS CHILLI HEATWAVE CHICKEN FRIES - APP966</div>
+            <div class="description">
+              We're bringing the heat back. Get 6pc Doritos Chilli Heatwave Chicken Fries for just £3.
+            </div>
+            <div class="coming-soon mt-2"> <i class="fa-solid fa-lock"></i> Coming soon!</div>
+          </div>
+        </div>
+
+        <!-- deal 2 -->
+
+        <div class="deal row align-items-center">
+          <div class="col-md-3">
+            <img src="img/offer2.avif" alt="Doritos Chicken Fries" class="img-fluid rounded">
+          </div>
+          <div class="col-md-9">
+            <div class="price">£10.99</div>
+            <div class="title">X2 WHOPPER MEALS £10.99 - APP904
+            </div>
+            <div class="description">
+              Get 2 WHOPPER® meals for just £10.99. Use app code APP904 if using a kiosk. Be quick, offer ends soon.
+            </div>
+          </div>
+        </div>
+
+        <!-- deal 3 -->
+        <div class="deal row align-items-center">
+          <div class="col-md-3">
+            <img src="img/offer3.avif" alt="Doritos Chicken Fries" class="img-fluid rounded">
+          </div>
+          <div class="col-md-9">
+            <div class="price">£5.99</div>
+            <div class="title">LARGE WHOPPER® MEAL - APP901
+            </div>
+            <div class="description">
+              £5.99 WHOPPER® meal (991 Kcal). Use app code APP901 if using a kiosk.
+            </div>
+          </div>
+        </div>
+
+        <!-- deal 4 -->
+        <div class="deal row align-items-center">
+          <div class="col-md-3">
+            <img src="img/offer4.avif" alt="Doritos Chicken Fries" class="img-fluid rounded">
+          </div>
+          <div class="col-md-9">
+            <div class="price">£5.99</div>
+            <div class="title">LARGE CHICKEN/VEGAN ROYALE MEAL - APP902
+            </div>
+            <div class="description">
+              £5.99 large Chicken Royale® meal (945 Kcal) or Vegan Royale meal (946 Kcal). Use app code APP902 if using
+              a kiosk.
+            </div>
+          </div>
+        </div>
+
+        <!-- deal 5 -->
+        <div class="deal row align-items-center">
+          <div class="col-md-3">
+            <img src="img/offer5.avif" alt="Doritos Chicken Fries" class="img-fluid rounded">
+          </div>
+          <div class="col-md-9">
+            <div class="price">£4.99</div>
+            <div class="title">MeltKing Boss</div>
+            <div class="description">
+              £4.99 A Classic or BBQ Melt, 3 Chilli Cheese Bites or 4 Onion Rings, regular fries & drink (879 Kcal). Use
+              app code APP984 if using a kiosk.
+            </div>
+          </div>
+        </div>
+
+        <!-- deal 6 -->
+        <div class="deal row align-items-center">
+          <div class="col-md-3">
+            <img src="img/offer6.avif" alt="Doritos Chicken Fries" class="img-fluid rounded">
+          </div>
+          <div class="col-md-9">
+            <div class="price">£4.99</div>
+            <div class="title">20 CHICKEN NUGGETS APP493
+            </div>
+            <div class="description">
+              We're bringing the heat back.
+            </div>
+          </div>
+        </div>
+
+        <!-- deal 7 -->
+
+        <div class="deal row align-items-center">
+          <div class="col-md-3">
+            <img src="img/offer7.avif" alt="Doritos Chicken Fries" class="img-fluid rounded">
+          </div>
+          <div class="col-md-9">
+            <div class="price">1.99</div>
+            <div class="title">6 CHILLI CHEESE BITES - APP83
+            </div>
+            <div class="description">
+              We're bringing the heat back. Get 6pc Doritos Chilli Heatwave Chicken Fries for just £3.
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- menu section -->
+
+  <div class="container-fluid main-section bg-color menu" id="menu">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center mt-2 mb-2">Menu</h2>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="delivery-list shadow-lg">
+            <img src="img/menu1.webp">
+            <h2>Smoked Cheddar & Bacon Crispy Chicken Meal Large</h2>
+            <p>Made with 100% chicken breast, topped with oak-smoked cheddar cheese, streaky bacon, crispy onions, fresh
+              rocket, pink pickled onions and toasted onion sauce.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="delivery-list shadow-lg">
+            <img src="img/menu2.webp">
+            <h2>Smoked Cheddar & Bacon Angus Meal Large
+            </h2>
+            <p>100% Aberdeen Angus Beef, topped with oak-smoked cheddar cheese, streaky bacon, crispy onions, fresh
+              rocket, pink pickled onions and toasted onion sauce.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="delivery-list shadow-lg">
+            <img src="img/menu3.avif">
+            <h2>Smoked Gourmet Loaded King Fries
+            </h2>
+            <p>100% Aberdeen Angus Beef, topped with oak-smoked cheddar cheese, streaky bacon, crispy onions, fresh
+              rocket, pink pickled onions and toasted onion sauce. </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="delivery-list shadow-lg">
+            <img src="img/menu4.avif">
+            <h2>Smoked Cheddar & Bacon Crispy Chicken Meal Large</h2>
+            <p>Made with 100% chicken breast, topped with oak-smoked cheddar cheese, streaky bacon, crispy onions, fresh
+              rocket, pink pickled onions and toasted onion sauce.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="delivery-list shadow-lg">
+            <img src="img/menu5.avif">
+            <h2>Smoked Cheddar & Bacon Crispy Chicken Meal Large</h2>
+            <p>Made with 100% chicken breast, topped with oak-smoked cheddar cheese, streaky bacon, crispy onions, fresh
+              rocket, pink pickled onions and toasted onion sauce.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="delivery-list shadow-lg">
+            <img src="img/menu6.avif">
+            <h2>Smoked Cheddar & Bacon Crispy Chicken Meal Large</h2>
+            <p>Made with 100% chicken breast, topped with oak-smoked cheddar cheese, streaky bacon, crispy onions, fresh
+              rocket, pink pickled onions and toasted onion sauce.</p>
+          </div>
+        </div>'
+      </div>
+    </div>
+  </div>
+
+  <!-- delivery section -->
+
+  <div class="delivery container-fluid main-section bg-color" id="delivery">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="delivery-left">
+            <img src="img/delivery.png">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="delivery-right">
+            <h2 class="text-center">Fastest Delivery</h2>
+            <h3 class="text-center">Your Favorite Meal, <br>is on the Way! </h3>
+            <div class="container text-center mt-2">
+              <div class="btn-group mb-4" role="group" aria-label="Pickup or Delivery">
+                <button type="button" class="btn btn-outline-secondary">Pick Up</button>
+                <button type="button" class="btn btn-delivery">Delivery</button>
+              </div>
+
+              <div class="input-group mb-4">
+                <input type="text" class="form-control" placeholder="Delivery Address" aria-label="Delivery Address">
+                <button class="btn btn-outline-secondary" type="button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <h5 class="mb-3">Use Your Current Location</h5>
+              <p class="mb-4">Let us know where you are so we can recommend nearby locations or enter an address above.
+              </p>
+
+              <button class="btn btn-danger">Share My Location</button>
+              <div>
+                <a href="#" class="text-decoration-underline">Location Terms</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <div class="delivery--box shadow-lg">
+                  <i class="fa fa-home"></i>
+                  <p>Delivery in 30 minutes.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="delivery--box shadow-lg">
+                  <i class="fa fa-hourglass"></i>
+                  <p>Delivery in 30 minutes.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <div class="delivery--box shadow-lg">
+                  <i class="fa-solid fa-truck"></i>
+                  <p>Delivery in 30 minutes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- about section start -->
+
+  <div class="about py-3 py-md-5" id="about">
+    <div class="container">
+      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+        <div class="col-12 col-lg-8 col-xl-5">
+          <img class="img-fluid rounded" loading="lazy" src="img/about.jpg" alt="About 1">
+        </div>
+        <div class="col-12 col-lg-4 col-xl-7">
+          <div class="row justify-content-xl-center">
+            <div class="text-center col-12 col-xl-11">
+              <h2 class="mb-3">About Uss</h2>
+              <h3 class="mb-3">GREAT FOOD COMES FIRST</h3>
+              <p class="mb-3">Every day, more than 11 million guests visit BURGER QUEEN restaurants around the world.
+                And they do so because our restaurants are known for serving high-quality, great-tasting, and affordable
+                food. Founded in 1954, BURGER Queen is the second largest fast food hamburger chain in the world. The
+                original HOME OF THE WHOPPER®, our commitment to premium ingredients, signature recipes, and
+                family-friendly dining experiences is what has defined our brand for more than 50 successful years.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact section start -->
+
+  <div class="contact py-3 py-md-5" id="contact">
+    <div class="container">
+      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+        <div class="col-12 col-lg-4 col-xl-7">
+          <div class="row justify-content-xl-center">
+            <div class=" col-12 col-xl-11">
+              <h2 class="mb-3 text-center">Want to get in touch?</h2>
+              <h3 class="mb-3">FAQs </h3>
+              <h4 class="text-justify">Find answers to our commonly asked questions on our FAQs page: <a
+                  href="#">https://www.burgerqueen.co/faqs</a></h4>
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputFirstName" class="form-label">First Name</label>
+                  <input type="inputFirstName" class="form-control" id="name">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputLastName" class="form-label">Last Name</label>
+                  <input type="inputLastName" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                  <label for="formGroupExampleInput" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your Email">
+                </div>
+                <div class="mb-3">
+                  <label for="formGroupExampleInput2" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Subject">
+                </div>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Massage</label>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8 col-xl-5">
+          <img class="img-fluid rounded" loading="lazy" src="img/contact.jpg" alt="About 1">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer section -->
+
+  <div class="container-fluid footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="footer-top">
+            <h2>BQ info</h2>
+            <h3>+16012345653</h3>
+            <span class="border-bottoms"></span>
+          </div>
+        </div>
+        <div class="col-md-4 footer--logo">
+          <img src="img/logo.webp" width="60px">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Our Company</h4>
+          <div class="row">
+            <div class="col-6">
+              <div class="footer-menu">
+                <ul>
+                  <li>Home</li>
+                  <li>Menu</li>
+                  <li>About us</li>
+                  <li>restaurant</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="footer-menu">
+                <ul>
+                  <li>Quick Order</li>
+                  <li>Fast Food</li>
+                  <li>Blogging</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4>Our Company</h4>
+          <p>Mon-Fri 8:00am- 12:00pm</p>
+          <p>sunday closed</p>
+          <p>Saturday 8:00am- 12:00 pm</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Contact Us</h4>
+          <div class="contact-info">
+            <p>
+              <span>
+                <i class="fa fa-map-marker"></i>
+              </span> House#8, Road Sonargaon Janapath, Dhaka 1230
+            </p>
+            <p>
+              <span>
+                <i class="fa fa-phone"></i>
+              </span> +123456789
+            </p>
+            <ul>
+              <li>
+                <i class="fa-brands fa-facebook"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-twitter"></i>
+              </li>
+              <li>
+                <i class="fa-brands fa-threads"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row copyright">
+        <div class="col-md-6">
+          <p>@ All Copy Right By Burgur Queen</p>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>
+              <a href="#">Service</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
